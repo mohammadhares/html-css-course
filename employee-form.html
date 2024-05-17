@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Employee Form</title>
+</head>
+<body>
+    
+    <section class="employee-form">
+        <h1>Employee Form</h1>
+        <form action="#" method="GET" enctype="multipart/form-data">
+            <!-- Step One -->
+            <div class="step_one ">
+                <div class="form-group">
+                    <label for="firstname">Firstname</label>
+                    <input 
+                        type="text" 
+                        name="firstname"
+                        placeholder="Ex: John"
+                        id="firstname"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Lastname</label>
+                    <input 
+                        type="text" 
+                        name="lastname" 
+                        placeholder="Ex: Smith"
+                        id="lastname"
+                    >
+                </div>
+                <div class="form-group gender_section">
+                    <label id="main_title" for="gender">Gender</label>
+                    <label for="male">
+                        <input 
+                            type="radio" 
+                            value="M" 
+                            name="gender" 
+                            id="gender"
+                        >
+                        Male
+                    </label>
+                    <label for="male">
+                        <input 
+                            type="radio" 
+                            value="F" 
+                            name="gender" 
+                            id="gender"
+                            checked
+                        >
+                        Female
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input 
+                        type="number" 
+                        name="age" 
+                        placeholder="21"
+                        id="age"
+                        min="18"
+                        max="65" 
+                    >
+                </div>
+            </div>
+
+            <!-- Step Two -->
+            <div class="step_two ">
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <select name="position" id="position">
+                        <option value="DOCKTOR">Doctor</option>
+                        <option value="ENGINEER">Engineer</option>
+                        <option value="MANAGER">Manager</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="example@gmail.com"
+                        id="email"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input 
+                        type="number" 
+                        name="phone" 
+                        placeholder="0093xxxxxxxxx"
+                        id="phone"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input 
+                        type="text" 
+                        name="address" 
+                        placeholder="Kabul, Afghanistan"
+                        id="address"
+                    >
+                </div>
+            </div>
+
+            <!-- Step Three -->
+            <div class="step_three ">
+                <div class="form-group">
+                    <label for="photo">Photo</label>
+                    <label class="upload_input" for="upload_file">
+                        <input 
+                            type="file" 
+                            name="photo" 
+                            id="upload_file"
+                            style="display: none;"
+                        >
+                        <i class="fa fa-file-image-o"></i>
+                        Upload File   
+                    </label>
+                </div>
+                <div class="button_group">
+                    <a class="button" href="./index.html">Cancel</a>
+                    <button class="button" type="submit">Save</button>
+                </div>
+            </div>
+
+            <div class="next_prev_button hide">
+                <button class="button">Prev</button>
+                <button class="button">Next</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+

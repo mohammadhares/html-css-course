@@ -1,0 +1,17 @@
+.container{
+    border: 10px solid red;
+    height: 100vh;
+}
+
+.item{
+    border: 5px solid dodgerblue;
+    width: 200px;
+    height: 200px;
+    margin: 500px auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

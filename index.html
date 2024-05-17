@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="table-section">
+      <div class="table-title">
+        <a href="./employee-form.html" class="circle-button">
+           <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Photo</th>
+            <th colspan="2">Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Position</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Salary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <img src="./img/img3.jpeg" />
+            </td>
+            <td>Ahmad</td>
+            <td>Karimi</td>
+            <td>Male</td>
+            <td>23</td>
+            <td>Engineer</td>
+            <td>ahmad@gmail.com</td>
+            <td>+93 7092121212</td>
+            <td>Kabul, Afghanistan</td>
+            <td>10,000 AF</td>
+            <td>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+              <button>
+                <i class="fa fa-edit"></i>
+              </button>
+              <button>
+                <i class="fa fa-eye"></i>
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>
+              <img src="./img/img1.jpeg" />
+            </td>
+            <td>Abida</td>
+            <td>Rahimi</td>
+            <td rowspan="2" style="border: 1px solid #222;">Female</td>
+            <td>23</td>
+            <td>Engineer</td>
+            <td>ab@gmail.com</td>
+            <td>+93 7092121212</td>
+            <td>Kabul, Afghanistan</td>
+            <td>14,000 AF</td>
+            <td>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+              <button>
+                <i class="fa fa-edit"></i>
+              </button>
+              <button>
+                <i class="fa fa-eye"></i>
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>
+              <img src="./img/img2.jpeg" />
+            </td>
+            <td>Sara</td>
+            <td>Jamal</td>
+            <td>22</td>
+            <td>Doctor</td>
+            <td>sara@gmail.com</td>
+            <td>+93 701221212</td>
+            <td>Kabul, Afghanistan</td>
+            <td>22,000 AF</td>
+            <td>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+              <button>
+                <i class="fa fa-edit"></i>
+              </button>
+              <button>
+                <i class="fa fa-eye"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th class="text-left" colspan="10">
+              Total
+            </th>
+            <th class="text-left" colspan="2">
+              46,000 AF
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <button onclick="print();" class="button print-button">
+      Print
+      <i class="fa fa-print"></i>
+    </button>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav{
+    background-color: dodgerblue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    flex-basis: 200px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    /* flex-grow: 1; */
+}
+
+nav ul li{
+    border-right: 1px solid white;
+}
+
+nav ul li:first-child{
+    border-left: 1px solid white;
+}
+
+
+nav ul li:hover{
+    background-color: rgb(15, 92, 170);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Cards */
+
+.card{
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    margin: 30px;
+}
+
+
+.card-item{
+    flex-basis: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 1px 2px 10px #544e4e4f;
+}
+
+.card-item + .card-item{
+    margin-left: 20px;
+}
+
+.card-item .img img{
+    width: 100%;
+}
+
+.card-item .content{
+    padding: 10px;
+}
+
+.card-item .content h3{
+    color: #555;
+}
+
+.card-item .content p{
+    color: #333;
+}
+
+.card-item .content button{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background-color: dodgerblue;
+    color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px #544e4e4f;
+    cursor: pointer;
+}
+
+.card-item .content button:hover{
+    background-color: rgb(10, 84, 159);
+}
+
+@media all and (min-width: 1900px) {
+    .card{
+        width: 70%;
+        margin: auto;
+    }
+
+    .card-item .content button{
+        padding: 15px;
+        font-size: 20px;
+    }
+}
+
+/* Responsive */
+@media all and (max-width: 600px){
+    nav ul{
+        flex-direction: column;
+        height: 250px;
+    }
+
+    nav ul li{
+        border-bottom: 1px solid white;
+    }
+}
