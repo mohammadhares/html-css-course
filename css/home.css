@@ -44,21 +44,23 @@ nav ul li a{
 
 .card{
     margin-top: 100px;
-    padding: 20px;
     display: flex;
-    margin: 30px;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
 }
-
 
 .card-item{
     flex-basis: 100%;
     background-color: #f9f9f9;
     box-shadow: 1px 2px 10px #544e4e4f;
+    flex: 1 1 calc(25% - 32px)
 }
 
-.card-item + .card-item{
+/* .card-item + .card-item{
     margin-left: 20px;
-}
+} */
 
 .card-item .img img{
     width: 100%;
@@ -94,7 +96,7 @@ nav ul li a{
     background-color: rgb(10, 84, 159);
 }
 
-@media all and (min-width: 1900px) {
+/* @media all and (min-width: 1900px) {
     .card{
         width: 70%;
         margin: auto;
@@ -104,7 +106,27 @@ nav ul li a{
         padding: 15px;
         font-size: 20px;
     }
+} */
+
+
+@media screen and (max-width: 1520px) {
+    .card-item{
+        flex: 1 1 calc(33.3% - 32px);
+    }
 }
+
+@media screen and (max-width: 900px) {
+    .card-item{
+        flex: 1 1 calc(50% - 32px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-item{
+        flex: 1 1 calc(100% - 32px);
+    }
+}
+
 
 /* Responsive */
 @media all and (max-width: 600px){
